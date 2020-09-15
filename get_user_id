@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "insert user name >"
+read name 
+usid=$(id -u $name) 
+if id $name &>/dev/null; then
+	if (( $usid >= 500 && $usid <= 1000 )); then 
+		getent passwd { $usid }
+	else
+		echo "user id is out of range"
+		sleep 5
+	fi
+else 
+	echo "not exsist"
+fi
