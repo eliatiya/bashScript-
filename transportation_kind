@@ -1,0 +1,20 @@
+#!/bin/bash 
+echo "insert transportation kind car/bus/plain/train/bycycle >"
+read car 
+case $car in 
+	"car")
+		echo "$car - it coust 5000 and hold for 5 years"
+		;;
+	"bus")
+                echo "$car - it coust 15000 and hold for 20 years"
+                ;;
+	"train")
+                echo "$car - it coust 2000000 and hold for 500 years"
+                ;;
+	"bycycle")
+                echo "$car - it coust 500 and hold for 3 years"
+                ;;
+	"plain")
+                echo "$car - it coust 1000000 and hold for 10 years"
+                ;;
+esac
