@@ -1,0 +1,26 @@
+#!/bin/bash 
+day=$(date +"%A")
+case $day in 
+	"Sunday")
+		echo "$day - hate that day"
+		;;
+	"Monday")
+                echo "$day - hard day"
+                ;;
+	"Tuesday")
+                echo "$day - middle week"
+                ;;
+	"Wednesday")
+                echo "$day - nothing to say about it"
+                ;;
+	"Thursday")
+                echo "$day - party day"
+                ;;
+        "Friday")
+                echo "$day - sleeping day"
+                ;;
+	"Saturday")
+                echo "$day - best day ever"
+                ;;
+
+esac
