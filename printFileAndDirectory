@@ -1,1 +1,11 @@
-
+#!/bin/bash
+echo "please insert full file/directory name >"
+read path 
+if [ -f "${path}" ] ; then 
+	cat $path 
+elif [ -d "${path}" ]; then 
+	cd $path
+	ls -la
+else 
+	echo "none above"	
+fi 
