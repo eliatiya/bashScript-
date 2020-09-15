@@ -1,1 +1,7 @@
-
+#!/bin/bash 
+stringIn=$@
+stringRange=${#stringIn}
+for (( i=$stringRange; i>=0; i--)); do
+	nameR+=${stringIn:$i:1}
+done 
+echo $nameR
